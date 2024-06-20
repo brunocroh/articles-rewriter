@@ -24,6 +24,7 @@
     "@langchain/core": "^0.2.7",
     "html-to-text": "^9.0.5",
     "langchain": "^0.2.5",
-    "playwright": "^1.44.1"
+    "playwright": "^1.44.1",
+    "puppeteer": "^22.11.2"
   }
 }
