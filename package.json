@@ -18,5 +18,12 @@
     "tsconfig-paths": "^4.2.0",
     "tsx": "^4.15.6",
     "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@langchain/community": "^0.2.12",
+    "@langchain/core": "^0.2.7",
+    "html-to-text": "^9.0.5",
+    "langchain": "^0.2.5",
+    "playwright": "^1.44.1"
   }
 }
