@@ -7,7 +7,5 @@ export const loadContent = async (url: string) => {
     docs = await TomsHardware.scraper(url);
   }
 
-  console.log({ docs });
-
-  // return docs;
+  return docs;
 };
