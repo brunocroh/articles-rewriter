@@ -2,6 +2,8 @@ import {
   PuppeteerWebBaseLoader,
   Page,
 } from "@langchain/community/document_loaders/web/puppeteer";
+import { Readability } from "@mozilla/readability";
+import { JSDOM } from "jsdom";
 
 export default {
   scraper: async (url: string) => {
@@ -19,7 +21,7 @@ export default {
         await page.$("article.article");
 
         const article = await page.evaluate(() => {
-          const article = document.querySelector("article.article");
+          const article = document.querySelector("body");
           return article ? article.innerHTML : "";
         });
 
@@ -31,6 +33,14 @@ export default {
 
     const docs = await loader.load();
 
-    return docs;
+    const doc = new JSDOM(docs[0].pageContent, {
+      url,
+    });
+
+    let reader = new Readability(doc.window.document);
+
+    const article = reader.parse();
+
+    return article;
   },
 };
