@@ -30,7 +30,7 @@ export const isArticleContent = async (text: string) => {
 
   const parser = new JsonOutputParser<CheckArticleContent>();
   const formatInstructions =
-    "Respond with a valid JSON object, containing one field: 'isContent' as a boolean.";
+    "Respond with a valid JSON object, containing one field: 'isContent' as a boolean. dont return anything else";
 
   const prompt = ChatPromptTemplate.fromTemplate(
     "check if this following text is part of an article or not, return false when identify html tags, attributes, css or javascript code.\n{formatInstructions}\n{text}",
