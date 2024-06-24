@@ -9,8 +9,8 @@ dependencies:
     specifier: ^0.2.12
     version: 0.2.12(@mozilla/readability@0.5.0)(html-to-text@9.0.5)(jsdom@24.1.0)(playwright@1.44.1)(puppeteer@22.11.2)
   '@langchain/core':
-    specifier: ^0.2.7
-    version: 0.2.7(langchain@0.2.5)
+    specifier: ^0.2.9
+    version: 0.2.9(langchain@0.2.5)
   '@langchain/openai':
     specifier: ^0.1.3
     version: 0.1.3(langchain@0.2.5)
@@ -683,7 +683,7 @@ packages:
       youtubei.js:
         optional: true
     dependencies:
-      '@langchain/core': 0.2.7(langchain@0.2.3)
+      '@langchain/core': 0.2.9(langchain@0.2.3)
       '@langchain/openai': 0.1.3(langchain@0.2.3)
       '@mozilla/readability': 0.5.0
       binary-extensions: 2.3.0
@@ -693,7 +693,7 @@ packages:
       js-yaml: 4.1.0
       jsdom: 24.1.0
       langchain: 0.2.3(html-to-text@9.0.5)(jsdom@24.1.0)(playwright@1.44.1)(puppeteer@22.11.2)
-      langsmith: 0.1.32(@langchain/core@0.2.7)(langchain@0.2.3)
+      langsmith: 0.1.32(@langchain/core@0.2.9)(langchain@0.2.3)
       playwright: 1.44.1
       puppeteer: 22.11.2(typescript@5.4.5)
       uuid: 9.0.1
@@ -710,15 +710,15 @@ packages:
       - pyodide
     dev: false
 
-  /@langchain/core@0.2.7(langchain@0.2.3):
-    resolution: {integrity: sha512-FdFiNWhszFuUyAhYdY+l5DtPnAnWCAjXMnkLmUJ1J54NeUiUm7gy26Hnd4bkvaOQJ8ddHH/EX03ZwdoYfLv1jw==}
+  /@langchain/core@0.2.9(langchain@0.2.3):
+    resolution: {integrity: sha512-pJshopBZqMNF020q0OrrO+vfApWTZUlZecRYMM7TWA5M8/zvEyU/mgA9DlzeRjjDmG6pwF6dIKVjpl6fIGVXlQ==}
     engines: {node: '>=18'}
     dependencies:
       ansi-styles: 5.2.0
       camelcase: 6.3.0
       decamelize: 1.2.0
       js-tiktoken: 1.0.12
-      langsmith: 0.1.32(@langchain/core@0.2.7)(langchain@0.2.3)
+      langsmith: 0.1.32(@langchain/core@0.2.9)(langchain@0.2.3)
       ml-distance: 4.0.1
       mustache: 4.2.0
       p-queue: 6.6.2
@@ -731,15 +731,15 @@ packages:
       - openai
     dev: false
 
-  /@langchain/core@0.2.7(langchain@0.2.3)(openai@4.52.0):
-    resolution: {integrity: sha512-FdFiNWhszFuUyAhYdY+l5DtPnAnWCAjXMnkLmUJ1J54NeUiUm7gy26Hnd4bkvaOQJ8ddHH/EX03ZwdoYfLv1jw==}
+  /@langchain/core@0.2.9(langchain@0.2.3)(openai@4.52.0):
+    resolution: {integrity: sha512-pJshopBZqMNF020q0OrrO+vfApWTZUlZecRYMM7TWA5M8/zvEyU/mgA9DlzeRjjDmG6pwF6dIKVjpl6fIGVXlQ==}
     engines: {node: '>=18'}
     dependencies:
       ansi-styles: 5.2.0
       camelcase: 6.3.0
       decamelize: 1.2.0
       js-tiktoken: 1.0.12
-      langsmith: 0.1.32(@langchain/core@0.2.7)(langchain@0.2.3)(openai@4.52.0)
+      langsmith: 0.1.32(@langchain/core@0.2.9)(langchain@0.2.3)(openai@4.52.0)
       ml-distance: 4.0.1
       mustache: 4.2.0
       p-queue: 6.6.2
@@ -752,15 +752,15 @@ packages:
       - openai
     dev: false
 
-  /@langchain/core@0.2.7(langchain@0.2.5):
-    resolution: {integrity: sha512-FdFiNWhszFuUyAhYdY+l5DtPnAnWCAjXMnkLmUJ1J54NeUiUm7gy26Hnd4bkvaOQJ8ddHH/EX03ZwdoYfLv1jw==}
+  /@langchain/core@0.2.9(langchain@0.2.5):
+    resolution: {integrity: sha512-pJshopBZqMNF020q0OrrO+vfApWTZUlZecRYMM7TWA5M8/zvEyU/mgA9DlzeRjjDmG6pwF6dIKVjpl6fIGVXlQ==}
     engines: {node: '>=18'}
     dependencies:
       ansi-styles: 5.2.0
       camelcase: 6.3.0
       decamelize: 1.2.0
       js-tiktoken: 1.0.12
-      langsmith: 0.1.32(@langchain/core@0.2.7)(langchain@0.2.5)
+      langsmith: 0.1.32(@langchain/core@0.2.9)(langchain@0.2.5)
       ml-distance: 4.0.1
       mustache: 4.2.0
       p-queue: 6.6.2
@@ -773,15 +773,15 @@ packages:
       - openai
     dev: false
 
-  /@langchain/core@0.2.7(langchain@0.2.5)(openai@4.52.0):
-    resolution: {integrity: sha512-FdFiNWhszFuUyAhYdY+l5DtPnAnWCAjXMnkLmUJ1J54NeUiUm7gy26Hnd4bkvaOQJ8ddHH/EX03ZwdoYfLv1jw==}
+  /@langchain/core@0.2.9(langchain@0.2.5)(openai@4.52.0):
+    resolution: {integrity: sha512-pJshopBZqMNF020q0OrrO+vfApWTZUlZecRYMM7TWA5M8/zvEyU/mgA9DlzeRjjDmG6pwF6dIKVjpl6fIGVXlQ==}
     engines: {node: '>=18'}
     dependencies:
       ansi-styles: 5.2.0
       camelcase: 6.3.0
       decamelize: 1.2.0
       js-tiktoken: 1.0.12
-      langsmith: 0.1.32(@langchain/core@0.2.7)(langchain@0.2.5)(openai@4.52.0)
+      langsmith: 0.1.32(@langchain/core@0.2.9)(langchain@0.2.5)(openai@4.52.0)
       ml-distance: 4.0.1
       mustache: 4.2.0
       p-queue: 6.6.2
@@ -798,7 +798,7 @@ packages:
     resolution: {integrity: sha512-M+CW4oXle5fdoz2T2SwdOef8pl3/1XmUx1vjn2mXUVM/128aO0l23FMF0SNBsAbRV6P+p/TuzjodchJbi0Ht/A==}
     engines: {node: '>=18'}
     dependencies:
-      '@langchain/core': 0.2.7(langchain@0.2.3)(openai@4.52.0)
+      '@langchain/core': 0.2.9(langchain@0.2.3)(openai@4.52.0)
       js-tiktoken: 1.0.12
       openai: 4.52.0
       zod: 3.23.8
@@ -812,7 +812,7 @@ packages:
     resolution: {integrity: sha512-riv/JC9x2A8b7GcHu8sx+mlZJ8KAwSSi231IPTlcciYnKozmrQ5H0vrtiD31fxiDbaRsk7tyCpkSBIOQEo7CyQ==}
     engines: {node: '>=18'}
     dependencies:
-      '@langchain/core': 0.2.7(langchain@0.2.3)(openai@4.52.0)
+      '@langchain/core': 0.2.9(langchain@0.2.3)(openai@4.52.0)
       js-tiktoken: 1.0.12
       openai: 4.52.0
       zod: 3.23.8
@@ -826,7 +826,7 @@ packages:
     resolution: {integrity: sha512-riv/JC9x2A8b7GcHu8sx+mlZJ8KAwSSi231IPTlcciYnKozmrQ5H0vrtiD31fxiDbaRsk7tyCpkSBIOQEo7CyQ==}
     engines: {node: '>=18'}
     dependencies:
-      '@langchain/core': 0.2.7(langchain@0.2.5)(openai@4.52.0)
+      '@langchain/core': 0.2.9(langchain@0.2.5)(openai@4.52.0)
       js-tiktoken: 1.0.12
       openai: 4.52.0
       zod: 3.23.8
@@ -840,7 +840,7 @@ packages:
     resolution: {integrity: sha512-cXWgKE3sdWLSqAa8ykbCcUsUF1Kyr5J3HOWYGuobhPEycXW4WI++d5DhzdpL238mzoEXTi90VqfSCra37l5YqA==}
     engines: {node: '>=18'}
     dependencies:
-      '@langchain/core': 0.2.7(langchain@0.2.3)
+      '@langchain/core': 0.2.9(langchain@0.2.3)
       js-tiktoken: 1.0.12
     transitivePeerDependencies:
       - langchain
@@ -851,7 +851,7 @@ packages:
     resolution: {integrity: sha512-cXWgKE3sdWLSqAa8ykbCcUsUF1Kyr5J3HOWYGuobhPEycXW4WI++d5DhzdpL238mzoEXTi90VqfSCra37l5YqA==}
     engines: {node: '>=18'}
     dependencies:
-      '@langchain/core': 0.2.7(langchain@0.2.5)
+      '@langchain/core': 0.2.9(langchain@0.2.5)
       js-tiktoken: 1.0.12
     transitivePeerDependencies:
       - langchain
@@ -1947,7 +1947,7 @@ packages:
       youtubei.js:
         optional: true
     dependencies:
-      '@langchain/core': 0.2.7(langchain@0.2.3)
+      '@langchain/core': 0.2.9(langchain@0.2.3)
       '@langchain/openai': 0.0.34(langchain@0.2.3)
       '@langchain/textsplitters': 0.0.3(langchain@0.2.3)
       binary-extensions: 2.3.0
@@ -1957,7 +1957,7 @@ packages:
       jsdom: 24.1.0
       jsonpointer: 5.0.1
       langchainhub: 0.0.11
-      langsmith: 0.1.32(@langchain/core@0.2.7)(langchain@0.2.3)
+      langsmith: 0.1.32(@langchain/core@0.2.9)(langchain@0.2.3)
       ml-distance: 4.0.1
       openapi-types: 12.1.3
       p-retry: 4.6.2
@@ -2128,7 +2128,7 @@ packages:
       youtubei.js:
         optional: true
     dependencies:
-      '@langchain/core': 0.2.7(langchain@0.2.5)
+      '@langchain/core': 0.2.9(langchain@0.2.5)
       '@langchain/openai': 0.1.3(langchain@0.2.5)
       '@langchain/textsplitters': 0.0.3(langchain@0.2.5)
       binary-extensions: 2.3.0
@@ -2138,7 +2138,7 @@ packages:
       jsdom: 24.1.0
       jsonpointer: 5.0.1
       langchainhub: 0.0.11
-      langsmith: 0.1.32(@langchain/core@0.2.7)(langchain@0.2.5)
+      langsmith: 0.1.32(@langchain/core@0.2.9)(langchain@0.2.5)
       ml-distance: 4.0.1
       openapi-types: 12.1.3
       p-retry: 4.6.2
@@ -2157,7 +2157,7 @@ packages:
     resolution: {integrity: sha512-WnKI4g9kU2bHQP136orXr2bcRdgz9iiTBpTN0jWt9IlScUKnJBoD0aa2HOzHURQKeQDnt2JwqVmQ6Depf5uDLQ==}
     dev: false
 
-  /langsmith@0.1.32(@langchain/core@0.2.7)(langchain@0.2.3):
+  /langsmith@0.1.32(@langchain/core@0.2.9)(langchain@0.2.3):
     resolution: {integrity: sha512-EUWHIH6fiOCGRYdzgwGoXwJxCMyUrL+bmUcxoVmkXoXoAGDOVinz8bqJLKbxotsQWqM64NKKsW85OTIutgNaMQ==}
     peerDependencies:
       '@langchain/core': '*'
@@ -2171,7 +2171,7 @@ packages:
       openai:
         optional: true
     dependencies:
-      '@langchain/core': 0.2.7(langchain@0.2.3)
+      '@langchain/core': 0.2.9(langchain@0.2.3)
       '@types/uuid': 9.0.8
       commander: 10.0.1
       langchain: 0.2.3(html-to-text@9.0.5)(jsdom@24.1.0)(playwright@1.44.1)(puppeteer@22.11.2)
@@ -2180,7 +2180,7 @@ packages:
       uuid: 9.0.1
     dev: false
 
-  /langsmith@0.1.32(@langchain/core@0.2.7)(langchain@0.2.3)(openai@4.52.0):
+  /langsmith@0.1.32(@langchain/core@0.2.9)(langchain@0.2.3)(openai@4.52.0):
     resolution: {integrity: sha512-EUWHIH6fiOCGRYdzgwGoXwJxCMyUrL+bmUcxoVmkXoXoAGDOVinz8bqJLKbxotsQWqM64NKKsW85OTIutgNaMQ==}
     peerDependencies:
       '@langchain/core': '*'
@@ -2194,7 +2194,7 @@ packages:
       openai:
         optional: true
     dependencies:
-      '@langchain/core': 0.2.7(langchain@0.2.3)(openai@4.52.0)
+      '@langchain/core': 0.2.9(langchain@0.2.3)(openai@4.52.0)
       '@types/uuid': 9.0.8
       commander: 10.0.1
       langchain: 0.2.3(html-to-text@9.0.5)(jsdom@24.1.0)(playwright@1.44.1)(puppeteer@22.11.2)
@@ -2204,7 +2204,7 @@ packages:
       uuid: 9.0.1
     dev: false
 
-  /langsmith@0.1.32(@langchain/core@0.2.7)(langchain@0.2.5):
+  /langsmith@0.1.32(@langchain/core@0.2.9)(langchain@0.2.5):
     resolution: {integrity: sha512-EUWHIH6fiOCGRYdzgwGoXwJxCMyUrL+bmUcxoVmkXoXoAGDOVinz8bqJLKbxotsQWqM64NKKsW85OTIutgNaMQ==}
     peerDependencies:
       '@langchain/core': '*'
@@ -2218,7 +2218,7 @@ packages:
       openai:
         optional: true
     dependencies:
-      '@langchain/core': 0.2.7(langchain@0.2.5)
+      '@langchain/core': 0.2.9(langchain@0.2.5)
       '@types/uuid': 9.0.8
       commander: 10.0.1
       langchain: 0.2.5(html-to-text@9.0.5)(jsdom@24.1.0)(playwright@1.44.1)(puppeteer@22.11.2)
@@ -2227,7 +2227,7 @@ packages:
       uuid: 9.0.1
     dev: false
 
-  /langsmith@0.1.32(@langchain/core@0.2.7)(langchain@0.2.5)(openai@4.52.0):
+  /langsmith@0.1.32(@langchain/core@0.2.9)(langchain@0.2.5)(openai@4.52.0):
     resolution: {integrity: sha512-EUWHIH6fiOCGRYdzgwGoXwJxCMyUrL+bmUcxoVmkXoXoAGDOVinz8bqJLKbxotsQWqM64NKKsW85OTIutgNaMQ==}
     peerDependencies:
       '@langchain/core': '*'
@@ -2241,7 +2241,7 @@ packages:
       openai:
         optional: true
     dependencies:
-      '@langchain/core': 0.2.7(langchain@0.2.5)(openai@4.52.0)
+      '@langchain/core': 0.2.9(langchain@0.2.5)(openai@4.52.0)
       '@types/uuid': 9.0.8
       commander: 10.0.1
       langchain: 0.2.5(html-to-text@9.0.5)(jsdom@24.1.0)(playwright@1.44.1)(puppeteer@22.11.2)
