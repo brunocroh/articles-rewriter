@@ -3,6 +3,11 @@ import {
   FewShotChatMessagePromptTemplate,
   ChatPromptTemplate,
 } from "@langchain/core/prompts";
+import {
+  HumanMessage,
+  SystemMessage,
+  trimMessages,
+} from "@langchain/core/messages";
 import { JsonOutputParser } from "@langchain/core/output_parsers";
 import { mistral, openAi } from "../llms";
 import { RunnableSequence } from "@langchain/core/runnables";
@@ -23,28 +28,33 @@ export const extractArticle = async (text: string) => {
   return result;
 };
 
-export const isArticleContent = async (text: string) => {
-  interface CheckArticleContent {
-    isContent: boolean;
+export const sanitizeHTML = async (html: any) => {
+  interface ArticleContent {
+    content: string;
   }
 
-  const parser = new JsonOutputParser<CheckArticleContent>();
-  const formatInstructions =
-    "Respond with a valid JSON object, containing one field: 'isContent' as a boolean. dont return anything else";
+  const parser = new JsonOutputParser<ArticleContent>();
+  const formatInstructions = "Respond with text without html tags";
 
-  const prompt = ChatPromptTemplate.fromTemplate(
-    "check if this following text is part of an article or not, return false when identify html tags, attributes, css or javascript code.\n{formatInstructions}\n{text}",
-  );
+  const prompt = new PromptTemplate({
+    template:
+      "I want to have content of article present on following HTML, please remove tags, html, css and js related on this file {html}",
+    inputVariables: ["html"],
+  });
 
   const partialPrompt = await prompt.partial({
     formatInstructions,
   });
 
-  const chain = partialPrompt.pipe(mistral).pipe(parser);
+  const chain = partialPrompt.pipe(mistral);
 
-  return await chain.invoke({
-    text: text,
+  const result = await chain.invoke({
+    html,
   });
+
+  console.log({ result: result });
+
+  return null;
 };
 
 export const extractTitle = async (url: string) => {
